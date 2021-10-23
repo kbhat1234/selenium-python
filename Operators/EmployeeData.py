@@ -1,0 +1,11 @@
+emp_no = int(input("Enter employee number: "))
+emp_name = input("Enter employee name: ")
+emp_sal = float(input("Enter employee salary: "))
+emp_addr = input("Enter employee address: ")
+emp_marr = bool(input("Is employee married[True|False] "))
+
+print(f'employee number is {emp_no}')
+print(f'employee name is {emp_name}')
+print(f'employee salary is {emp_sal}')
+print(f'employee address is {emp_addr}')
+print(f'employee married is {emp_marr}')
