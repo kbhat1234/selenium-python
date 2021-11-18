@@ -48,6 +48,6 @@ print('C:\\curl\\bin')
 C:\curl\bin
 '''
 
-MAX_VALUE=200
-MAX_VALUE=2
+MAX_VALUE = 200
+MAX_VALUE = 2
 print(MAX_VALUE)

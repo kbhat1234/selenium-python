@@ -12,8 +12,7 @@ print("Hello %s, the list is %s" % (name, l))
 name = 'karthik'
 salary = 20000
 gf = 'sunny'
-print('Hello {0} your salary is {1} and your girl friend is {2}' .format(name, salary, gf))
-print('Hello {} your salary is {} and your girl friend is {}' .format(name, salary, gf))
-print('Hello {x} your salary is {y} and your girl friend is {z}' .format(z=gf, y=salary, x=name))
+print('Hello {0} your salary is {1} and your girl friend is {2}'.format(name, salary, gf))
+print('Hello {} your salary is {} and your girl friend is {}'.format(name, salary, gf))
+print('Hello {x} your salary is {y} and your girl friend is {z}'.format(z=gf, y=salary, x=name))
 print(f'name is {name}, your salary is {salary} and girl friend is {gf}')
-

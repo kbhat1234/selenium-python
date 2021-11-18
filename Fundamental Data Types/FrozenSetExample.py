@@ -1,4 +1,4 @@
-s = {10,20,30,40}
+s = {10, 20, 30, 40}
 fr = frozenset(s)
 print(fr)
 print(type(fr))

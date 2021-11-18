@@ -24,14 +24,13 @@ else:
 brand = input("Enter the favourite brand: ")
 if brand == 'RC':
     print(f'It is Royal Challenge brand {brand}')
-elif brand=='KF':
+elif brand == 'KF':
     print(f'It is Kingfisher brand {brand}')
-elif brand =='KO':
+elif brand == 'KO':
     print(f'It is KO brand {brand}')
-elif brand=='FO':
+elif brand == 'FO':
     print(f'It is Fosters brand {brand}')
 else:
     print(f'{brand} brand is not supported')
 
 print("End of the program")
-

@@ -1,8 +1,7 @@
-import math
 import math as m
-from math import sqrt
-from math import pi
 from math import lcm
+from math import pi
+from math import sqrt
 
 print(f'pi value is {m.pi}')
 print(f'sqrt value is {m.sqrt(16)}')

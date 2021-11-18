@@ -1,8 +1,8 @@
-s='durga';
+s = 'durga';
 print(s);
 print(type(s));
 
-s="durga";
+s = "durga";
 print(s);
 print(type(s));
 

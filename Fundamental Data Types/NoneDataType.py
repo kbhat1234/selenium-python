@@ -2,9 +2,9 @@ a = None
 b = None
 c = None
 
-print(type(a),type(b),type(c))
-print(a,b,c)
-print(id(a),id(b),id(c))
+print(type(a), type(b), type(c))
+print(a, b, c)
+print(id(a), id(b), id(c))
 
 a = 10
 print(id(a))

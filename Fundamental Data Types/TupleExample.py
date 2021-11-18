@@ -1,4 +1,4 @@
-t = (10,20,30,10,'durga')
+t = (10, 20, 30, 10, 'durga')
 print(t)
 print(type(t))
 print(t[0])

@@ -7,6 +7,6 @@ def f1():
 
 f1();
 
-#fp = open('main.py').read();
+# fp = open('main.py').read();
 print(open('main.py').read());
-#print(fp);
+# print(fp);

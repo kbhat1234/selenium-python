@@ -19,10 +19,9 @@ print(f'employee married is {emp_married}')
 a, b = [int(x) for x in input("Enter 2 numbers: ").split()]  # split() by default takes 2 arguments with space
 print(f'sum is {a + b}')
 
-
 # Read 2 float values from keyboard which are specified with',' seperation and print sum
 p, q = [float(y) for y in input("Enter any 2 float values: ").split(',')]  # split(',')
-print(f'The product is {p*q}')
+print(f'The product is {p * q}')
 
 # using eval() function
 x = input("Enter any expression: ")

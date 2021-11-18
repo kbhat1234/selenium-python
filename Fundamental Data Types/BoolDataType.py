@@ -8,7 +8,6 @@ b = 20;
 c = a < b;
 print(c);
 
-
-print(True+True);
-print(True-False);
-print(True*False);
+print(True + True);
+print(True - False);
+print(True * False);

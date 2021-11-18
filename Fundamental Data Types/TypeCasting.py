@@ -40,15 +40,14 @@ print(float(False));
 print(float('12'));
 print(float('12.33'));
 
-
 # type casting complex to int, complex to float, complex to bool, complex to str
-print(complex(10)); # 10+0j
-print(complex(2.33)); # 1.33+0j
-print(complex(10,20)); # 10+20j
-print(complex(0.2,2.3)); # 0.2+2.3j
+print(complex(10));  # 10+0j
+print(complex(2.33));  # 1.33+0j
+print(complex(10, 20));  # 10+20j
+print(complex(0.2, 2.3));  # 0.2+2.3j
 print(complex(2.2j));
-print(complex(True)); # 1+0j
-print(complex(False)); # 0j
+print(complex(True));  # 1+0j
+print(complex(False));  # 0j
 print(complex('12'));
 print(complex('12.33'));
 # print(complex('10','20'));
@@ -62,10 +61,10 @@ print(bool(0.0));
 print(bool(0.001));
 print(bool(1.23));
 
-print(bool(0+0j));
-print(bool(1+0j));
-print(bool(0+1j));
-print(bool(1.1+0j));
+print(bool(0 + 0j));
+print(bool(1 + 0j));
+print(bool(0 + 1j));
+print(bool(1.1 + 0j));
 
 print(bool('True'));
 print(bool('False'));
@@ -79,10 +78,9 @@ print(str(0o23));
 print(str(0x54));
 
 print(str(12.22));
-print(str(10+20j));
-print(str(1.2+2.1j));
+print(str(10 + 20j));
+print(str(1.2 + 2.1j));
 
 print(str(True));
 print(str(False));
 print(str(None));
-

@@ -1,6 +1,5 @@
 import keyword
 from random import randint as r
-from keyword import kwlist as kw
 
 a = 10;
 print(type(a));

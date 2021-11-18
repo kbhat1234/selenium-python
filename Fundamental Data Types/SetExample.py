@@ -1,4 +1,4 @@
-s = {10,20,10,'durga',30,40}
+s = {10, 20, 10, 'durga', 30, 40}
 print(type(s))
 print(s)
 s.add(50);

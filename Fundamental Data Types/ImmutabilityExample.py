@@ -2,10 +2,9 @@ x = 10
 print(f'value of x is {x}')
 print(f'address of x is {id(x)}')
 
-x = x+1
+x = x + 1
 print(f'after change value of x is {x}')
 print(f'after change the address of x is {id(x)}')
-
 
 a = 10
 b = a
@@ -29,8 +28,8 @@ a = True
 b = True
 print(a is b)
 
-a = 10+20j
-b = 10+20j
+a = 10 + 20j
+b = 10 + 20j
 print(a is b)
 print(id(a))
 print(id(b))

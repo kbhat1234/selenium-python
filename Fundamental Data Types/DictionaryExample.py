@@ -1,4 +1,4 @@
-d = {100:'karthik',200:'rini',300:'kasustubh',400:'ishani'}
+d = {100: 'karthik', 200: 'rini', 300: 'kasustubh', 400: 'ishani'}
 print(d)
 print(type(d))
 

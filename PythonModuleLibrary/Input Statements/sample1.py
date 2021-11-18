@@ -26,4 +26,3 @@ print(f'The sum is {x+y+z}')
 
 a, b = [float(x) for x in input("Enter any 2 float values: ").split(',')]
 print('The sum is ', a + b)
-

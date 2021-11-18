@@ -16,7 +16,6 @@ else:
     print(f'{brand} brand is not supported')
 print('thank you')
 
-
 num1 = int(input("Enter 1st number: "))
 num2 = int(input("Enter 2nd number: "))
 print("The num1 value is %i " % num1)
@@ -62,7 +61,6 @@ if n >= 1 and n <= 100:
     print("The number ", n, "is in between 1 and 100")
 else:
     print("The number ", n, "is not between 1 and 100")
-
 
 num3 = int(input("Enter the digit between 0 to 9: "))
 if num3 == 0:
