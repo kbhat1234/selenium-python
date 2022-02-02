@@ -1,0 +1,6 @@
+t1 = (10, 20, 30)
+t2 = (11, 15, 19)
+print(t1>t2)
+print(t1>=t2)
+print(t1<t2)
+print(t1<=t2)
