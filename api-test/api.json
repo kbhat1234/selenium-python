@@ -1,0 +1,41 @@
+{
+  "urls": [
+    {
+      "baseUrl": "https://reqres.in/api"
+    },
+    {
+      "endPointURL1": "/users",
+      "endPointURL2": "/register",
+      "endPointURL3": "/login"
+    }
+  ],
+  "queryParams": [
+    {
+      "param": 1,
+      "delayParam": 5
+    }
+  ],
+  "body": {
+    "postBody": {
+      "name": "morpheus",
+      "job": "leader"
+    },
+    "patchBody": {
+      "name": "rini"
+    },
+    "putBody": {
+      "name": "Karthik",
+      "job": "Software"
+    }
+  },
+  "registerBodySuccess": {
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+  },
+  "registerBodyUnsuccessEmail": {
+    "email": "sydney@fife"
+  },
+  "registerBodyUnsuccessPassword": {
+    "password": "pistol"
+  }
+}
