@@ -22,7 +22,7 @@ endPointURL2 = "/register"
 endPointURL3 = "/login"
 
 param = {
-    "page": 1
+    "page": 2
 }
 
 delayParam = {
@@ -70,6 +70,7 @@ def listusers():
     print(response.headers)
     print(response.content)
     print(response.text)
+    print(response.request)
     print(r)
     print(r['total_pages'])
     print(r['data'][0]['first_name'])
@@ -78,6 +79,14 @@ def listusers():
 
     assert response.status_code == 200, "Invalid status code"
     assert r['data'][0]['email'] == "george.bluth@reqres.in", "invalid email"
+
+
+def header_info_reponse():
+    response = requests.head(url=baseURL + endPointURL1, params=param)
+    print(response.status_code)
+    print(response.url)
+    print(response.content)
+    print(response.headers)
 
 
 def singleuser():
@@ -89,6 +98,7 @@ def singleuser():
     print(response.url)
     print(response.ok)
     print(response.text)
+    print(response.request)
 
     print(r['data']['id'])
     print(r['support']['url'])
@@ -107,6 +117,7 @@ def usernotfound():
 
     print(response.status_code)
     print(response.url)
+    print(response.request)
 
     assert response.status_code == 404, "invalid response status"
     print(r)
@@ -120,6 +131,7 @@ def createuserpost():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
     print(r)
     print(r['name'] + " " + r['job'] + " " + r['id'])
 
@@ -129,12 +141,13 @@ def createuserpost():
 
 def updateuserput():
     print("PUT() method - updating the user details")
-    response = requests.put(url=baseURL + endPointURL1 + "/2", data=putBody)
+    response = requests.put(url=baseURL + endPointURL1 + "/200", data=putBody)
     r = response.json()
 
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
     print(r)
     print(r['name'] + " " + r['job'])
 
@@ -144,12 +157,14 @@ def updateuserput():
 
 def partialupdateuserpatch():
     print("PATCH() method - partial updating the user details")
-    response = requests.put(url=baseURL + endPointURL1 + "/2", data=patchBody)
+    response = requests.put(url=baseURL + endPointURL1 + "/33", data=patchBody)
     r = response.json()
 
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.content)
+    print(response.request)
     print(r)
     print(r['name'])
 
@@ -164,6 +179,7 @@ def deleteuser():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
 
     assert response.status_code == 204, "invalid status code"
 
@@ -176,6 +192,8 @@ def userregisterationsuccess():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
+
     print(r['id'], r['token'])
     print(r)
 
@@ -189,6 +207,7 @@ def registrationuncessfulemail():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
 
     assert response.status_code == 400, "invalid status code"
 
@@ -200,6 +219,7 @@ def registrationuncessfulpassword():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
 
     assert response.status_code == 400, "invalid status code"
 
@@ -212,6 +232,8 @@ def loginsuccessful():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
+
     print(r)
     print(r['token'])
 
@@ -226,6 +248,8 @@ def loginunsuccessfulemail():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
+
     print(r['error'])
 
     assert response.status_code == 400, "invalid status code"
@@ -239,6 +263,8 @@ def loginunsuccessfulpassword():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
+
     print(r['error'])
 
     assert response.status_code == 400, "invalid status code"
@@ -252,24 +278,24 @@ def delayedresponse():
     print(response.status_code)
     print(response.ok)
     print(response.url)
+    print(response.request)
 
     assert r['per_page'] == 6, "invalid contents per page"
 
 
-listusers()
-"""
-singleuser()
-usernotfound()
-createuserpost()
-updateuserput()
-partialupdateuserpatch()
-deleteuser()
+# listusers()
+header_info_reponse()
+# singleuser()
+# usernotfound()
+# createuserpost()
+# updateuserput()
+# partialupdateuserpatch()
+# deleteuser()
 
-userregisterationsuccess()
-registrationuncessfulemail()
-registrationuncessfulpassword()
-loginsuccessful()
-loginunsuccessfulemail()
-loginunsuccessfulpassword()
-delayedresponse()
-"""
+# userregisterationsuccess()
+# registrationuncessfulemail()
+# registrationuncessfulpassword()
+# loginsuccessful()
+# loginunsuccessfulemail()
+# loginunsuccessfulpassword()
+# delayedresponse()

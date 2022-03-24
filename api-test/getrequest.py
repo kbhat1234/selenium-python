@@ -7,8 +7,8 @@ parameters = {
     "page": 2
 }
 
-response_code = requests.get(host_url+end_point_url,params=parameters)
-#response_code = requests.get(host_url)
+response_code = requests.get(host_url + end_point_url, params=parameters)
+# response_code = requests.get(host_url)
 print("the response for this GET request is")
 print(type(response_code.status_code))
 print(response_code.status_code)
@@ -26,6 +26,6 @@ assert (resp["data"][1]["email"]).endswith("reqres.in"), "Wrong email format"
 print(resp["support"]["url"])
 assert resp["support"]["url"] == "https://reqres.in/#support-heading", "Wrong support url"
 assert resp["data"][1]["email"] == "lindsay.ferguson@reqres.in", "wrong email address"
-response_result = (json.dumps(response_code.json(),indent=4))
+response_result = (json.dumps(response_code.json(), indent=4))
 
-#print(response_result)
+# print(response_result)
