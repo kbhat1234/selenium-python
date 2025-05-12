@@ -18,5 +18,15 @@ dic1 = {
     "Mobile" : "9886867677"
 }
 
-dic.update([dic1])
+dic.update(dic1)
+print(dic)
+
+dic2 = {
+    "area" : "JP Nagar",
+    "qualifications" : "BTech"
+}
+
+dic.update(dic2)
+print(dic)
+dic.clear()
 print(dic)
