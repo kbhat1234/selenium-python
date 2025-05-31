@@ -82,3 +82,33 @@ print(type(fruits["name"][0])) # <class 'str'>
 print(fruits["quantity"][0]) # 4
 print(type(fruits["quantity"][0])) # <class 'int'>
 print(type(keys), type(values)) # <class 'dict_keys'> <class 'dict_values'>
+
+# binary data - converting string to bytes
+str1 = "Welcome to python programming"
+arr1 = bytes(str1, 'utf-8')
+print(arr1) # b'Welcome to python programming'
+print(type(arr1)) # <class 'bytes'>
+arr2 = bytes(str1, 'utf-16')
+print(arr2) # b'\xff\xfeT\x00h\x00i\x00s\x00 \x00i\x00s\x00 \x00a\x00 \x00s\x00e\x00c\x00o\x00n\x00d\x00 \x00s\x00t\x00r\x00i\x00n\x00g\x00'
+print(type(arr2)) # <class 'bytes'>
+
+# creating bytes of given size
+b = bytes(4)
+print(b) # b'\x00\x00\x00\x00'
+print(type(b)) # <class 'bytes'>
+
+# bytearray() - converting string to bytes
+str1 = "This is first string"
+arr1 = bytearray(str1, 'utf-8')
+print(arr1) # bytearray(b'This is first string')
+print(type(arr1)) # <class 'bytearray'>
+print(id(arr1)) # 2348638639344
+
+arr2 = bytearray(str2, 'utf-16')
+print(arr2) # bytearray(b'\xff\xfeT\x00h\x00i\x00s\x00 \x00i\x00s\x00 \x00a\x00 \x00s\x00e\x00c\x00o\x00n\x00d\x00 \x00s\x00t\x00r\x00i\x00n\x00g\x00')
+print(type(arr2)) # <class 'bytearray'>
+print(id(arr2)) # 2348638639088
+
+# creating bytes of the given size using bytearray()
+b = bytearray(5)
+print(b) # bytearray(b'\x00\x00\x00\x00\x00')
