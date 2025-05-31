@@ -41,4 +41,44 @@ using only stop as 10, start by default as 0 and step counter by default as 1
 for i in range(4):
     print(i)
 
+# using start and stop
+for i in range(0, 20):
+    print(i)
 
+# using start, stop and step
+for i in range(2, 20, 2):
+    print(i)
+
+# using negative step
+for i in range(20, 2, -2):
+    print(i)
+
+# dictionary
+dict = {}
+print(dict, type(dict), id(dict))
+dict = {
+    "name" : "karthik",
+    "age" : 45,
+    "canvote" : True
+}
+print(dict) # {'name': 'karthik', 'age': 45, 'canvote': True} 
+print(type(dict)) # <class 'dict'> 
+print(id(dict)) # 1536752894208
+print(dict["name"]) # karthik
+
+fruits = {
+    "name" : ["orange", "banana", "litchi", "mango"],
+    "quantity": [4, 12, 25, 10]
+}
+print(fruits) # {'name': ['orange', 'banana', 'litchi', 'mango'], 'quantity': [4, 12, 25, 10]}
+print(fruits["name"]) # ['orange', 'banana', 'litchi', 'mango']
+print(fruits["quantity"]) # [4, 12, 25, 10]
+keys = fruits.keys() 
+values = fruits.values()
+print(keys) # dict_keys(['name', 'quantity'])
+print(values) # dict_values([['orange', 'banana', 'litchi', 'mango'], [4, 12, 25, 10]])
+print(fruits["name"][0])  # orange
+print(type(fruits["name"][0])) # <class 'str'>
+print(fruits["quantity"][0]) # 4
+print(type(fruits["quantity"][0])) # <class 'int'>
+print(type(keys), type(values)) # <class 'dict_keys'> <class 'dict_values'>
