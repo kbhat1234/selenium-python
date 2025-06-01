@@ -104,7 +104,7 @@ print(arr1) # bytearray(b'This is first string')
 print(type(arr1)) # <class 'bytearray'>
 print(id(arr1)) # 2348638639344
 
-arr2 = bytearray(str2, 'utf-16')
+arr2 = bytearray(str1, 'utf-16')
 print(arr2) # bytearray(b'\xff\xfeT\x00h\x00i\x00s\x00 \x00i\x00s\x00 \x00a\x00 \x00s\x00e\x00c\x00o\x00n\x00d\x00 \x00s\x00t\x00r\x00i\x00n\x00g\x00')
 print(type(arr2)) # <class 'bytearray'>
 print(id(arr2)) # 2348638639088
@@ -112,3 +112,25 @@ print(id(arr2)) # 2348638639088
 # creating bytes of the given size using bytearray()
 b = bytearray(5)
 print(b) # bytearray(b'\x00\x00\x00\x00\x00')
+
+# memoryview() will return the memory view object from specified object
+#str1 = bytes("hello", "utf-8")
+#mem = memoryview(str1)
+#print(type(mem))
+#print(list(mem[:]))
+
+# set data
+set1 = set() # empty set
+print(set1, type(set1), len(set1))
+
+set2 = {2, 4, 2, 4, 6}
+print(set2)
+print(type(set2))
+print(len(set2))
+
+# None
+state = "karnataka"
+state = None
+print(state) # None
+print(type(state)) # <class 'NoneType'>
+print(id(state)) # 140715363305464
