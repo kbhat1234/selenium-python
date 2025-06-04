@@ -48,6 +48,59 @@ colors.insert(1, "pink")
 print(colors) # ['yellow', 'pink', 'blue', 'green', 'red']
 
 # add items to the list using extend()
-rainbow = ["viloet", "purple", "orange"]
+# add list to list
+rainbow = ["violet", "purple", "orange"]
 colors.extend(rainbow)
-print(colors) # ['yellow', 'pink', 'blue', 'green', 'red', 'viloet', 'purple', 'orange']
+print(colors) # ['yellow', 'pink', 'blue', 'green', 'red', 'violet', 'purple', 'orange']
+
+# add tuple to list
+car = ["ford", "vw", "skoda", "suzuki"]
+car1 = ("mercedes", "fiat", "jeep")
+car.extend(car1) # ['yellow', 'pink', 'blue', 'green', 'red', 'violet', 'purple', 'orange']
+print(car) # ['ford', 'vw', 'skoda', 'suzuki', 'mercedes', 'fiat', 'jeep']
+print(car1) # ('mercedes', 'fiat', 'jeep')
+
+# add set to list
+cars = ["Hyundai", "Tata", "Mahindra"]
+cars2 = {"Mercedes", "Volkswagen", "BMW"}
+cars.extend(cars2)
+print(car)  # ['ford', 'vw', 'skoda', 'suzuki', 'mercedes', 'fiat', 'jeep']
+print(cars) # ['Hyundai', 'Tata', 'Mahindra', 'BMW', 'Volkswagen', 'Mercedes']
+cars.extend(car)
+print(cars)
+print(car)
+
+#add dictionary to list
+students = ["Sakshi", "Aaditya", "Ritika"]
+students2 = {"Yash": 18, "Devika": 19, "Soham": 19}
+students.extend(students2)
+print(students) # ['Sakshi', 'Aaditya', 'Ritika', 'Yash', 'Devika', 'Soham']
+
+# remove items from list - pop() without providing the index
+colors = ["Red", "Yellow", "Green", "Blue", "Pink"]
+colors.pop() # last item in the list will be deleted
+print(colors) # ['Red', 'Yellow', 'Green', 'Blue']
+
+# pop() giving the index
+colors.pop(2) # "Green" is removed from index 2
+print(colors) # ['Red', 'Yellow', 'Blue']
+
+# remove() with providing the item to be deleted
+colors.remove("Yellow") # item "Yellow" will be removed from the list
+print(colors) # ['Red', 'Blue']
+
+colors.append("Violet")
+colors.append("Orange")
+print(colors)
+
+# del a particular item from list providing the specified index
+del colors[1] # item "Blue" will be removed from the list at index 1
+print(colors) # ['Red', 'Violet', 'Orange']
+
+# del the entire list and variable itself
+# del colors # entire list items deleted with variable colors
+# print(colors) # NameError: name 'colors' is not defined
+
+# clear() list items - empty list
+colors.clear() # empty the list
+print(colors) # []
